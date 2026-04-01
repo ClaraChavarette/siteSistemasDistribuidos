@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos de Sistemas Distribuídos</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="background-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Conceito Base</div>
+                        <h2 class="animate-title">Sistemas Distribuídos</h2>
+                        <p class="animate-text">Um sistema distribuído é quando um sistema principal faz integração com outros sistemas para aumentar informações ou serviços do qual o sistema principal não possui.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Arquitetura</div>
+                        <h2 class="animate-title">Cliente-Servidor</h2>
+                        <p class="animate-text">Sistema onde um servidor central possui os dados e os clientes buscam esses dados.</p>
+                        <p class="animate-text"><strong>Vantagem:</strong> É seguro pois as regras de acesso e protocolos de segurança são aplicados centralmente, protegendo as informações de forma eficiente.</p>
+                        <p class="animate-text"><strong>Desvantagem:</strong> Se o servidor central cair, todos os outros sistemas também caem.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Arquitetura</div>
+                        <h2 class="animate-title">Peer-to-Peer (P2P)</h2>
+                        <p class="animate-text">Dois sistemas compartilham dados entre si, um envia para o outro e vice-versa, sem depender de um servidor central.</p>
+                        <p class="animate-text"><strong>Vantagem:</strong> Maior escalabilidade, ou seja, a capacidade de manter a eficiência com o aumento de dados ou usuários.</p>
+                        <p class="animate-text"><strong>Desvantagem:</strong> Alto consumo de recursos computacionais devido ao grande número de requisições.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Arquitetura</div>
+                        <h2 class="animate-title">Orientado a Serviços</h2>
+                        <p class="animate-text">Um sistema oferece serviços para outros sistemas através da rede.</p>
+                        <ul class="animate-text">
+                            <li>Armazenamento em Nuvem</li>
+                            <li>Serviços de Inteligência Artificial</li>
+                            <li>APIs Especializadas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Alto Desempenho</div>
+                        <h2 class="animate-title">Supercomputação</h2>
+                        <p class="animate-text">A supercomputação é o uso de supercomputadores para a resolução de problemas.. Os supercomputadores combinam milhares de processadores trabalhando paralelamente, o que o torna muito mais rápido, sendo possível resolver problemas complexos que seriam impossíveis de processar em computadores comuns em um tempo razoável. </p>
+                        <p class="animate-text">São comumente utilizados em:</p>
+                        <ul class="animate-text">
+                            <li>Previsões meteorológicas</li>
+                            <li>Estudos climáticos</li>
+                            <li>Biotecnologia</li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Execução</div>
+                        <h2 class="animate-title">Processos e Concorrência</h2>
+                        <p class="animate-text"><strong>Processo:</strong> Unidade de execução que processa uma requisição (um programa em execução).</p>
+                        <p class="animate-text"><strong>Concorrência:</strong> Ocorre quando dois ou mais processos tentam acessar ou modificar o mesmo recurso ao mesmo tempo. O que pode gerar a condição de corrida.</p>
+                        <p class="animate-text alert-box">⚠️ <strong>Condição de Corrida:</strong> O resultado final depende da ordem de execução. Se 2 processos atualizam algo ao mesmo tempo, um valor pode sobrescrever o outro.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Integração</div>
+                        <h2 class="animate-title">Comunicação de Processos</h2>
+                        <p class="animate-text">Ocorre por meio da troca de mensagens por uma rede de dados. O processo que está enviando empacota a informação em um formato padronizado, e o protocolo de rede garante que esses bits cheguem ao processo que enviará as informações, que então desempacota e processa o conteúdo. </p>
+                        <div class="cards-container animate-text">
+                            <div class="glass-card">
+                                <h3>RPC</h3>
+                                <p>Remote Procedure Call. Faz a chamada em um computador remoto parecer uma função local para o desenvolvedor.</p>
+                            </div>
+                            <div class="glass-card">
+                                <h3>MOM</h3>
+                                <p>Message-Oriented Middleware. Comunicação totalmente baseada em filas de mensagens.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Controle</div>
+                        <h2 class="animate-title">Sincronização</h2>
+                        <p class="animate-text">Garante a ordem dos eventos, coordena o acesso a recursos e garante a consistência de dados. A falta dela gera o problema de inconsistência de estado.</p>
+                        <p class="animate-text alert-box">⚠️ <strong>Inconsistência de Estado:</strong> Sem sincronização, dois processos podem ler que um recurso está disponível ao mesmo tempo (ex: vender o mesmo ingresso duas vezes).</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Resiliência</div>
+                        <h2 class="animate-title">Tolerância a Falhas</h2>
+                        <p class="animate-text">Capacidade de continuar operando corretamente, mesmo que componentes (hardware, software, rede) falhem.</p>
+                        <p class="animate-text">O sistema é projetado para detectar o erro, isolá-lo e recuperar-se de forma transparente para o usuário final.</p>
+                        <p class="animate-text">Isso aumenta drasticamente a <strong>confiabilidade</strong> do sistema durante sua operação, já que a confiabilidade do sistema é a probabilidade desse sistema funcionar sem falhas durante um certo período. </p>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="text-glass">
+                        <div class="badge">Agrupamento</div>
+                        <h2 class="animate-title">Cluster vs Grid</h2>
+                        <div class="cards-container animate-text">
+                            <div class="glass-card">
+                                <h3>Cluster de Computadores</h3>
+                                <p>Nós no <strong>mesmo espaço físico</strong>, na mesma rede local. Rodam o mesmo S.O. e funcionam como um único sistema para realizar uma tarefa. Ele melhora o desempenho das aplicações, visto que ele divide as tarefas grandes em pedaços pequenos e cada nó do cluster processa uma parte simultaneamente.</p>
+                            </div>
+                            <div class="glass-card">
+                                <h3>Grid Computing</h3>
+                                <p>É o conjunto de recursos de computação de vários lugares, ele utiliza o poder de processamento de computadores espalhados pelo <strong>mundo, via internet</strong>. Não exige o mesmo S.O. nem o mesmo hardware. Descentralizado e heterogêneo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <!-- Navegação Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</body>
+</html>
